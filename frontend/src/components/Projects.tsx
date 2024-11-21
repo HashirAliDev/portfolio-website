@@ -30,47 +30,47 @@ interface Project {
 const projects: Project[] = [
   {
     title: 'Crypto Tracker',
-    description: 'Real-time cryptocurrency tracking application with price alerts, portfolio management, and market analysis.',
+    description: 'A comprehensive cryptocurrency tracking platform that provides real-time price data, market trends, and detailed coin information using the CoinGecko API.',
     image: '/projects/crypto-tracker.png',
-    technologies: ['React', 'TypeScript', 'Material-UI', 'CoinGecko API', 'Chart.js'],
-    githubUrl: 'https://github.com/hashirsyed/crypto-tracker',
-    liveUrl: 'https://github.com/hashirsyed/crypto-tracker',
+    technologies: ['React', 'TypeScript', 'Material-UI', 'CoinGecko API', 'Axios'],
+    githubUrl: 'https://github.com/HashirAliDev/crypto-tracker',
+    liveUrl: 'https://crypto-tracker-hashiralidev.vercel.app',
     features: [
-      'Real-time price updates',
-      'Portfolio tracking',
-      'Price alerts',
-      'Market analysis',
-      'Interactive charts',
+      'Real-time cryptocurrency prices',
+      'Detailed coin information',
+      'Market cap rankings',
+      'Price change tracking',
+      'Responsive design',
     ],
   },
   {
     title: 'Weather App',
-    description: 'Modern weather application featuring real-time weather data, forecasts, and location-based weather information.',
+    description: 'An intuitive weather application that delivers accurate weather forecasts, current conditions, and location-based weather updates using the OpenWeather API.',
     image: '/projects/weather-app.png',
-    technologies: ['React', 'OpenWeather API', 'Geolocation', 'Styled Components'],
-    githubUrl: 'https://github.com/hashirsyed/weather-app',
-    liveUrl: 'https://github.com/hashirsyed/weather-app',
+    technologies: ['React', 'OpenWeather API', 'Material-UI', 'Axios', 'TypeScript'],
+    githubUrl: 'https://github.com/HashirAliDev/weather-app',
+    liveUrl: 'https://weather-app-hashiralidev.vercel.app',
     features: [
-      'Current weather',
-      '5-day forecast',
-      'Location search',
-      'Responsive design',
-      'Weather alerts',
+      'Current weather conditions',
+      'Detailed forecasts',
+      'Location-based weather',
+      'Temperature unit conversion',
+      'Weather icons and descriptions',
     ],
   },
   {
     title: 'Movie App',
-    description: 'Feature-rich movie application for discovering, searching, and tracking your favorite movies and TV shows.',
+    description: 'A Netflix-inspired movie application that allows users to discover, search, and explore movies and TV shows using the TMDB API, featuring a modern and responsive design.',
     image: '/projects/movie-app.png',
-    technologies: ['React', 'TMDB API', 'Redux', 'Material-UI', 'Firebase'],
-    githubUrl: 'https://github.com/hashirsyed/movie-app',
-    liveUrl: 'https://github.com/hashirsyed/movie-app',
+    technologies: ['React', 'Vite', 'TMDB API', 'Styled Components', 'Axios'],
+    githubUrl: 'https://github.com/HashirAliDev/movie-app',
+    liveUrl: 'https://movie-app-hashiralidev.vercel.app',
     features: [
-      'Movie search',
-      'Watchlist',
-      'Movie details',
-      'User ratings',
-      'Recommendations',
+      'Movie and TV show browsing',
+      'Search functionality',
+      'Detailed movie information',
+      'Responsive Netflix-like UI',
+      'Genre-based filtering',
     ],
   },
 ];
@@ -99,50 +99,42 @@ const Projects = () => {
 
   return (
     <Box
+      component="section"
+      id="projects"
       sx={{
-        py: 12,
-        minHeight: '100vh',
-        background: 'linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%)',
+        py: 8,
+        backgroundColor: 'background.default',
       }}
     >
       <Container>
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
           <Typography
-            variant="h3"
+            variant="h2"
             component="h2"
             align="center"
             gutterBottom
-            sx={{
-              fontWeight: 'bold',
-              mb: 8,
-              background: 'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent',
-            }}
+            sx={{ mb: 6 }}
           >
-            Featured Projects
+            Projects
           </Typography>
-
           <Grid container spacing={4}>
             {projects.map((project, index) => (
-              <Grid item xs={12} md={4} key={index}>
+              <Grid item xs={12} md={6} lg={4} key={index}>
                 <motion.div variants={itemVariants}>
                   <Card
                     sx={{
                       height: '100%',
                       display: 'flex',
                       flexDirection: 'column',
-                      backgroundColor: 'rgba(255,255,255,0.8)',
-                      backdropFilter: 'blur(10px)',
-                      borderRadius: 2,
-                      overflow: 'hidden',
-                      transition: 'transform 0.3s ease-in-out',
+                      transition: '0.3s',
                       '&:hover': {
                         transform: 'translateY(-8px)',
+                        boxShadow: 8,
                       },
                     }}
                   >
@@ -151,16 +143,10 @@ const Projects = () => {
                       height="200"
                       image={project.image}
                       alt={project.title}
-                      sx={{
-                        objectFit: 'cover',
-                        transition: 'transform 0.3s ease-in-out',
-                        '&:hover': {
-                          transform: 'scale(1.05)',
-                        },
-                      }}
+                      sx={{ objectFit: 'cover' }}
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography variant="h5" component="h3" gutterBottom>
+                      <Typography gutterBottom variant="h5" component="h3">
                         {project.title}
                       </Typography>
                       <Typography
@@ -176,13 +162,7 @@ const Projects = () => {
                             key={tech}
                             label={tech}
                             size="small"
-                            sx={{
-                              mr: 1,
-                              mb: 1,
-                              background:
-                                'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-                              color: 'white',
-                            }}
+                            sx={{ mr: 0.5, mb: 0.5 }}
                           />
                         ))}
                       </Box>
@@ -190,8 +170,8 @@ const Projects = () => {
                         Key Features:
                       </Typography>
                       <ul style={{ paddingLeft: '1.2rem', margin: '0.5rem 0' }}>
-                        {project.features.map((feature) => (
-                          <li key={feature}>
+                        {project.features.map((feature, idx) => (
+                          <li key={idx}>
                             <Typography variant="body2" color="text.secondary">
                               {feature}
                             </Typography>
@@ -199,7 +179,7 @@ const Projects = () => {
                         ))}
                       </ul>
                     </CardContent>
-                    <CardActions sx={{ p: 2, pt: 0 }}>
+                    <CardActions sx={{ justifyContent: 'space-between', px: 2, pb: 2 }}>
                       <Button
                         component={Link}
                         href={project.liveUrl}
@@ -207,12 +187,6 @@ const Projects = () => {
                         rel="noopener noreferrer"
                         variant="contained"
                         endIcon={<LaunchIcon />}
-                        sx={{
-                          background:
-                            'linear-gradient(45deg, #2196F3 30%, #21CBF3 90%)',
-                          color: 'white',
-                          mr: 1,
-                        }}
                       >
                         Live Demo
                       </Button>
@@ -221,7 +195,7 @@ const Projects = () => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        color="primary"
+                        aria-label="GitHub repository"
                       >
                         <GitHubIcon />
                       </IconButton>
