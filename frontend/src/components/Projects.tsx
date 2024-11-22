@@ -44,11 +44,11 @@ const projects: Project[] = [
   },
   {
     title: 'Weather App',
-    description: 'An intuitive weather application that delivers accurate weather forecasts, current conditions, and location-based weather updates using the OpenWeather API. Currently being redeployed for public access.',
+    description: 'An intuitive weather application that delivers accurate weather forecasts, current conditions, and location-based weather updates using the OpenWeather API.',
     image: '/projects/weather-app.png',
     technologies: ['React', 'OpenWeather API', 'Material-UI', 'Axios', 'TypeScript'],
     githubUrl: 'https://github.com/HashirAliDev/weather-app',
-    liveUrl: 'https://weather-app-hashiralidev.vercel.app/',
+    liveUrl: 'https://weather-app-seven-teal-32.vercel.app/',
     features: [
       'Current weather conditions',
       'Detailed forecasts',
