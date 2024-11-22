@@ -34,7 +34,7 @@ const projects: Project[] = [
     image: '/projects/crypto-tracker.png',
     technologies: ['React', 'TypeScript', 'Material-UI', 'CoinGecko API', 'Axios'],
     githubUrl: 'https://github.com/HashirAliDev/crypto-tracker',
-    liveUrl: 'https://crypto-tracker-hashiralidev.vercel.app',
+    liveUrl: 'https://crypto-tracker-chi-eight.vercel.app/',
     features: [
       'Real-time cryptocurrency prices',
       'Detailed coin information',
@@ -49,7 +49,7 @@ const projects: Project[] = [
     image: '/projects/weather-app.png',
     technologies: ['React', 'OpenWeather API', 'Material-UI', 'Axios', 'TypeScript'],
     githubUrl: 'https://github.com/HashirAliDev/weather-app',
-    liveUrl: 'https://weather-app-hashiralidev.vercel.app',
+    liveUrl: 'https://weather-pku0zfa6z-hashiralidevs-projects.vercel.app/',
     features: [
       'Current weather conditions',
       'Detailed forecasts',
@@ -64,7 +64,7 @@ const projects: Project[] = [
     image: '/projects/movie-app.png',
     technologies: ['React', 'Vite', 'TMDB API', 'Styled Components', 'Axios'],
     githubUrl: 'https://github.com/HashirAliDev/movie-app',
-    liveUrl: 'https://movie-app-hashiralidev.vercel.app',
+    liveUrl: 'https://movie-app1-two.vercel.app/',
     features: [
       'Movie and TV show browsing',
       'Search functionality',
