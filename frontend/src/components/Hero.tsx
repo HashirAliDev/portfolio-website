@@ -113,7 +113,7 @@ const Hero = () => {
                     ...gradientText,
                   }}
                 >
-                  Hello, I'm [Your Name]
+                  Hello, I'm Hashir Ali
                 </Typography>
               </motion.div>
 
