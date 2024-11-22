@@ -28,6 +28,23 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: 'Modern E-commerce Platform',
+    description: 'A full-stack e-commerce website with modern UI, secure authentication, and comprehensive product management.',
+    image: '/images/ecommerce-dashboard.png',
+    technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'JWT'],
+    githubUrl: 'https://github.com/HashirAliDev/modern-ecommerce',
+    liveUrl: 'https://modern-ecommerce-demo.vercel.app/',
+    features: [
+      'Modern and responsive UI design',
+      'Product browsing with filtering and search',
+      'Shopping cart functionality',
+      'User authentication and account management',
+      'Secure checkout process',
+      'Order tracking',
+      'Admin dashboard'
+    ],
+  },
+  {
     title: 'Crypto Tracker',
     description: 'A comprehensive cryptocurrency tracking platform that provides real-time price data, market trends, and detailed coin information using the CoinGecko API.',
     image: '/projects/crypto-tracker.png',
@@ -50,11 +67,11 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/HashirAliDev/weather-app',
     liveUrl: 'https://weather-app-seven-teal-32.vercel.app',
     features: [
-      'Current weather conditions',
-      'Detailed forecasts',
-      'Location-based weather',
-      'Temperature unit conversion',
-      'Weather icons and descriptions',
+      'Real-time weather updates',
+      'Location-based forecasts',
+      'Interactive weather maps',
+      'Temperature graphs',
+      'Dark mode support',
     ],
   },
   {
