@@ -48,7 +48,7 @@ const projects: Project[] = [
     image: '/projects/weather-app.png',
     technologies: ['React', 'OpenWeather API', 'Material-UI', 'Axios', 'TypeScript'],
     githubUrl: 'https://github.com/HashirAliDev/weather-app',
-    liveUrl: 'https://weather-app-seven-teal-32.vercel.app/',
+    liveUrl: 'https://weather-app-seven-teal-32.vercel.app',
     features: [
       'Current weather conditions',
       'Detailed forecasts',
