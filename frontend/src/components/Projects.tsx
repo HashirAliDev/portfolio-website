@@ -32,7 +32,7 @@ const projects: Project[] = [
     description: 'A full-stack e-commerce website with modern UI, secure authentication, and comprehensive product management.',
     image: '/images/ecommerce-dashboard.png',
     technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'JWT'],
-    githubUrl: 'https://github.com/HashirAliDev/modern-ecommerce',
+    githubUrl: 'https://github.com/HashirAliDev/modern-ecommerce-updated',
     liveUrl: 'https://modern-ecommerce-hashir.vercel.app/',
     features: [
       'Modern and responsive UI design',
