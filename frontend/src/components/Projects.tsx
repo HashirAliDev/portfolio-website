@@ -44,7 +44,7 @@ const projects: Project[] = [
   },
   {
     title: 'Weather App',
-    description: 'An intuitive weather application that delivers accurate weather forecasts, current conditions, and location-based weather updates using the OpenWeather API.',
+    description: 'An intuitive weather application that delivers accurate weather forecasts, current conditions, and location-based weather updates using the OpenWeather API. Currently being redeployed for public access.',
     image: '/projects/weather-app.png',
     technologies: ['React', 'OpenWeather API', 'Material-UI', 'Axios', 'TypeScript'],
     githubUrl: 'https://github.com/HashirAliDev/weather-app',
