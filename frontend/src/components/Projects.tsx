@@ -33,7 +33,7 @@ const projects: Project[] = [
     image: '/images/ecommerce-dashboard.png',
     technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB', 'Redux Toolkit', 'Tailwind CSS', 'JWT'],
     githubUrl: 'https://github.com/HashirAliDev/modern-ecommerce',
-    liveUrl: 'https://modern-ecommerce-demo.vercel.app/',
+    liveUrl: 'https://modern-ecommerce-hashir.vercel.app/',
     features: [
       'Modern and responsive UI design',
       'Product browsing with filtering and search',
