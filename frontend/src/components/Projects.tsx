@@ -11,7 +11,6 @@ import {
   Button,
   Chip,
   IconButton,
-  Link,
 } from '@mui/material';
 import { motion } from 'framer-motion';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -181,7 +180,7 @@ const Projects = () => {
                     </CardContent>
                     <CardActions sx={{ justifyContent: 'space-between', px: 2, pb: 2 }}>
                       <Button
-                        component={Link}
+                        component="a"
                         href={project.liveUrl}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -191,7 +190,7 @@ const Projects = () => {
                         Live Demo
                       </Button>
                       <IconButton
-                        component={Link}
+                        component="a"
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
